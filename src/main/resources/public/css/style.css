@@ -1,0 +1,58 @@
+*{margin: 0;}
+
+.header {
+    background: rgb(128, 255, 255);
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    padding: 4px;
+    font-family: sans-serif;
+}
+
+.control-panel {
+    background: lightgray;
+    text-align: right;
+    padding: 4px;
+    font-family: sans-serif;
+}
+
+.languages {
+    background: white;
+    border: 1px solid gray;
+}
+
+#editor { height: 400px; position: relative;}
+
+.button-container {
+    text-align: right;
+    padding: 4px;
+}
+
+.btn {
+    background: #57a958;
+    color: white;
+    padding: 8px;
+    border: 0;
+}
+
+.output {
+		list-style-type: none;
+        margin: 0;
+        padding: 0;
+        border: 2px solid red;
+        min-height: 100px;
+        width: 99%;
+        resize: none;
+
+}
+.spinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    font-size: 2em;
+    font-weight: bold;
+ }
+

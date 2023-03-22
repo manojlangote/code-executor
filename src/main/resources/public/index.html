@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Code Executor</title>
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+	<div class="header">Code Executor</div>
+	<span class="control-panel">
+		<button id="beautify-btn" style="color:black;" class="btn">{ } Beautify</button>
+		&nbsp; &nbsp;
+		Select Language:
+		&nbsp; &nbsp;
+		<select id="languages" class="languages" onchange="changeLanguage()">
+			<option value="c"> C </option>
+			<option value="cpp"> C++ </option>
+			<option value="java">Java</option>
+			<option value="node"> Node JS </option>
+			<option value="php"> PHP </option>
+			<option value="python"> Python </option>
+		</select>
+	</span>
+	<div class="editor" id="editor"></div>
+
+	<div class="button-container">
+		<button id="submit-btn" class="btn"> Run </button>
+	</div>
+
+	<div class="output"></div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="js/lib/ace.js"></script>
+	<script src="js/lib/ext-beautify.js"></script>
+	<script src="js/lib/theme-monokai.js"></script>
+	<script src="js/ide.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/spin.js/2.3.2/spin.min.js"></script>
+</body>
+
+</html>
